@@ -1,26 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.p1 {
-  font-family: "Times New Roman", Times, serif;
+* {
+  box-sizing: border-box;
 }
 
-.p2 {
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
+/* Style the header */
+.header {
+  background-color: #DC143C;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* Style the footer */
+.footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 <body>
 
-<h1>CSS font-family</h1>
-<p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
-<p class="p2">This is a paragraph, shown in the Arial font.</p>
-<p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+<div class="header">
+  <h2>5280 Landmarks</h2>
+</div>
+
+    <img src="https://github.com/jimriddle1/static_challenges/blob/master/images/1.jpg?raw=true" alt="Cinque Terre" width="669" height="400">
+  </a>
+  
+<p><strong>Denver Art Museum</strong></p>
+
+<p>Lorem ipsum dolor sit amet, quis idque munere est ex. Eos id soluta meliore menandri, sed ex graeci prompta sapientem. Cum in verterem partiendo, quod partiendo principes vix et. Ne eam virtute abhorreant. At qui doming nemore mediocritatem, ei pri bonorum blandit, vim elitr recusabo salutatus eu.</p>
+
+<p>Mea adhuc persecuti in, dolorum mentitum ullamcorper his ut. Graeci scriptorem cum ea, an ignota signiferumque nec. No dicunt sanctus moderatius sed, meliore inermis ei mea. Utinam impedit maiestatis sea ad, quis efficiendi eu mel, ea solet placerat phaedrum vis. Et vix causae aliquam, commodo blandit imperdiet ex his.</p>
+
+<p>Duo an eleifend omittantur, te sint civibus recusabo eos. An ius corpora definiebas cotidieque. Eu pri reque sapientem contentiones, fierent conclusionemque mei in. Saepe veniam ne mei, ut facilisi omittantur nec.</p>
+
+Nam ad quas consul salutandi, sea ad verterem quaestio. Mei ea quot dictas. Eam choro eloquentiam eu, vim cu facete scriptorem. Mel at latine veritus.</p>
+
+
+      <img src=https://github.com/jimriddle1/static_challenges/blob/master/images/2.jpg?raw=true alt="Larimer Square" width="200" height="200">
+  </a>
+  
+  <p><strong>Larimer Square</strong></p>
+  
+     <img src="https://github.com/jimriddle1/static_challenges/blob/master/images/5.jpg?raw=true" alt="Millenium Bridge" width="200" height="200">
+     </a>
+     
+       <p><strong>Millenium Bridge</strong></p>
+  
+        <img src=https://github.com/jimriddle1/static_challenges/blob/master/images/6.jpg?raw=true alt="Molly Brown House" width="200" height="200">
+  </a>
+  
+    <p><strong>Molly Brown House</strong></p>
+
+
+<div class="footer">
+  <p>Alia utinam maiorum pro te, eum ex sonet putent discere. Mea cu possit forensibus comprehensam. Mel te primis commodo, nibh labore nostrum ei mel. Ex vix adolescens suscipiantur, malorum iuvaret usu id. At mea lobortis pertinacia, scripta sententiae et mei, sumo partem pro ex. Nam movet facete ex, eos rebum nulla qualisque ea, vis malis clita efficiantur ut. At vel lorem paulo soluta, ancillae quaestio no quo, id vim blandit voluptatum.</p>
+</div>
 
 </body>
 </html>
+
+
